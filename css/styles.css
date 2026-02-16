@@ -1,0 +1,24 @@
+body{
+  font-family: Arial, sans-serif;
+  padding: 16px;
+}
+main{
+  max-width: 520px;
+}
+label{
+  display:block;
+  margin:10px 0;
+}
+input{
+  width:100%;
+  padding:8px;
+  margin-top:6px;
+}
+button{
+  margin-right:8px;
+  margin-top:8px;
+}
+#resultado{
+  padding:10px;
+  background:#f2f2f2;
+}

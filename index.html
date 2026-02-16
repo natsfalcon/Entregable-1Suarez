@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simulador de balance financiero</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <main>
+    <h1>Simulador de balance financiero</h1>
+
+    <p>
+      Escribe tu ingreso y tus gastos. Verás tu balance y podrás guardar registros.
+    </p>
+
+    <form id="form">
+      <label>Ingreso mensual:
+        <input id="ingreso" type="number" min="0" step="0.01" required />
+      </label>
+
+      <label>Gasto fijo:
+        <input id="fijo" type="number" min="0" step="0.01" required />
+      </label>
+
+      <label>Gasto variable:
+        <input id="variable" type="number" min="0" step="0.01" required />
+      </label>
+
+      <button type="submit">Calcular</button>
+      <button type="button" id="guardar">Guardar</button>
+      <button type="button" id="borrar">Borrar historial</button>
+    </form>
+
+    <h2>Resultado</h2>
+    <p id="resultado">Sin cálculo todavía.</p>
+
+    <h2>Historial</h2>
+    <ul id="historial"></ul>
+
+    <h2>Categorías</h2>
+    <ul id="categorias"></ul>
+  </main>
+
+  <script src="js/simulador.js"></script>
+</body>
+</html>
